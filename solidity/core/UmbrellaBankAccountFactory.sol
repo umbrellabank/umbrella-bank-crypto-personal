@@ -8,7 +8,7 @@ import "../interfaces/IUmbrellaBankAccountFactory.sol";
 import "./UmbrellaBankPersonalAccount.sol";
 
 
-contract UmbrellaBankAcountFactory is IUmbrellaBankAccountFactory, IOpenVersion { 
+contract UmbrellaBankAccountFactory is IUmbrellaBankAccountFactory, IOpenVersion { 
 
     string constant name = "RESERVED_UMBRELLA_BANK_CRYPTO_ACCOUNT_FACTORY";
     uint256 constant version = 1; 
