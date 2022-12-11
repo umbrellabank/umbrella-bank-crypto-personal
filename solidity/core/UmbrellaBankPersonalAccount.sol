@@ -5,7 +5,7 @@ import "https://github.com/OpenZeppelin/openzeppelin-contracts/blob/fcf35e572284
 
 import "https://github.com/Block-Star-Logic/open-libraries/blob/703b21257790c56a61cd0f3d9de3187a9012e2b3/blockchain_ethereum/solidity/V1/libraries/LOpenUtilities.sol";
 
-import "https://github.com/Block-Star-Logic/open-bank/blob/417a0f1c00df8139190f4ee535c30eb737e24dc7/blockchain_ethereum/solidity/V2/contracts/core/OpenBankAccount.sol";
+import "https://github.com/Block-Star-Logic/open-bank/blob/8e37a4379c3f23cc4d1cbf839a564f6d00f81c67/blockchain_ethereum/solidity/V2/contracts/core/OpenBankAccount.sol";
 
 import "../interfaces/IUmbrellaBankOpenProxy.sol";
 import "../interfaces/IUmbrellaBankPersonal.sol";
