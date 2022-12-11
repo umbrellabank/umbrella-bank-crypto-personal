@@ -1,9 +1,7 @@
 // SPDX-License-Identifier: UNLICENSED
-pragma solidity ^ 0.8.13;
+pragma solidity ^0.8.17;
 
 import "https://github.com/OpenZeppelin/openzeppelin-contracts/blob/fcf35e5722847f5eadaaee052968a8a54d03622a/contracts/token/ERC20/extensions/IERC20Metadata.sol";
-
-
 
 import "https://github.com/Block-Star-Logic/open-bank/blob/8bd243e86259ba0c3ff560726c878b7eaf3a4afb/blockchain_ethereum/solidity/V2/contracts/interfaces/IOpenBankSafety.sol";
 import "https://github.com/Block-Star-Logic/open-bank/blob/8bd243e86259ba0c3ff560726c878b7eaf3a4afb/blockchain_ethereum/solidity/V2/contracts/core/OpenBank.sol";
@@ -30,7 +28,7 @@ contract UmbrellaBankPersonal is OpenBank, IUmbrellaBankPersonal {
                 address _accountFactoryAddress ) OpenBank(_safeHarbour) { 
         owner = _owner; 
         name = "OPEN BANK PERSONAL"; 
-        version = 3; // override parent version
+        version = 4; // override parent version
         accountFactory = IUmbrellaBankAccountFactory(_accountFactoryAddress);
         defaultErc20 = _defaultAccountErc20; 
     }

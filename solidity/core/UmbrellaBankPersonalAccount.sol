@@ -1,11 +1,11 @@
 // SPDX-License-Identifier: UNLICENSED
-pragma solidity ^ 0.8.13;
+pragma solidity ^0.8.17;
 
 import "https://github.com/OpenZeppelin/openzeppelin-contracts/blob/fcf35e5722847f5eadaaee052968a8a54d03622a/contracts/token/ERC20/extensions/IERC20Metadata.sol";
 
 import "https://github.com/Block-Star-Logic/open-libraries/blob/703b21257790c56a61cd0f3d9de3187a9012e2b3/blockchain_ethereum/solidity/V1/libraries/LOpenUtilities.sol";
 
-import "https://github.com/Block-Star-Logic/open-bank/blob/8bd243e86259ba0c3ff560726c878b7eaf3a4afb/blockchain_ethereum/solidity/V2/contracts/core/OpenBankAccount.sol";
+import "https://github.com/Block-Star-Logic/open-bank/blob/417a0f1c00df8139190f4ee535c30eb737e24dc7/blockchain_ethereum/solidity/V2/contracts/core/OpenBankAccount.sol";
 
 import "../interfaces/IUmbrellaBankOpenProxy.sol";
 import "../interfaces/IUmbrellaBankPersonal.sol";
@@ -25,7 +25,7 @@ contract UmbrellaBankPersonalAccount is OpenBankAccount {
         bank = IUmbrellaBankPersonal(_bank);
         openProxy = IUmbrellaBankOpenProxy(_bank);
         name = string("UMBRELLA_BANK_PERSONAL_ACCOUNT_").append(IERC20Metadata(_erc20).name());
-        version = 1; 
+        version = 2; 
     }
 
     function payIn(uint256 _amount, string memory _reference) payable external returns (uint256 _txnRef) {

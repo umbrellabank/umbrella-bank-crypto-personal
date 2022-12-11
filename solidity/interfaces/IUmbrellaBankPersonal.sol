@@ -4,6 +4,10 @@ pragma solidity ^ 0.8.17;
 
 interface IUmbrellaBankPersonal { 
 
+    function getActivated() view external returns (bool _activated);
+
+    function activateBank() external returns (bool _bankActivated);
+
     // ============================= USERS =======================================
 
     function isUser(address _user) view external returns (bool _isUser);
